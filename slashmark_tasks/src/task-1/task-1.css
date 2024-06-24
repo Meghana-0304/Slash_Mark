@@ -1,14 +1,16 @@
 header{
     background-color: white;
     position: fixed;
+    top: 0;
     width: 100%;
     margin: 0%;
     padding:0%;
+    
 }
 header .container{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 header .logo img{
@@ -34,16 +36,22 @@ header nav ul li a:hover {
 section{
     text-align: center;
 }
+.home{
+    width: 100%;
+    height: 100%;
+    margin-top: 81px;
+}
+
 .home .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: burlywood;
 }
-.home .container img{
-    width:50%;
-    height: auto;
-    padding-left:3% ;
+#coffee{
+    width:35%;
+    height: 30%;
+    padding:3% ;
     border-radius: 100%;
 }
 .home .container h1{
@@ -61,19 +69,28 @@ section{
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 1fr;
     gap: 50px;
+    transition: trasnform 1.5s ease-in-out;
 }
-.items .item-1 , .items .item-2 , .items .item-3 , .items .item-4 , .items .item-5 , .item .items-6 {
+
+.items > div:hover{
+    transform: scale(1.1);
+}
+.items .item-1 , .items .item-2 , .items .item-3 , .items .item-4 , .items .item-5 , .items .item-6 {
     justify-content:center;
     align-items: center;
-    outline-color: black;
 }
 .items .item-1 img , .items .item-2 img , .items .item-3 img , .items .item-4  img , .items .item-5 img , .items .item-6 img {
-    width:80%;
+    width:60%;
+    padding: 1%;
     height: auto;
 }
 .items .item-1 p , .items .item-2 p , .items .item-3 p , .items .item-4  p , .items .item-5 p , .items .item-6 p {
+    margin-top: -3%;
     font-size: 40px;
 }
+.items .item-1 p:hover , .items .item-2 p:hover , .items .item-3 p:hover , .items .item-4  p:hover , .items .item-5 p:hover , .items .item-6 p:hover{
+    color: burlywood;
+} 
 .about {
     background-color:burlywood;
 }
@@ -91,10 +108,18 @@ section{
     grid-auto-rows: 1fr;
     gap: 60px;
     padding: 2%;
+    transition: trasnform 1.5s ease-in-out;
+}
+.features > div:hover{
+    transform : scale(1.1);
+}
+.features .feature{
+    border: solid 2px black;
+    padding: 3%;
 }
 .features .feature i {
     font-size: xx-large;
-    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
     text-decoration: underline;
 }
@@ -113,6 +138,7 @@ section{
 }
 .contact p{
     padding: 0%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .contact ul {
     list-style: none;
@@ -120,6 +146,7 @@ section{
 }
 
 .contact ul li {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-top: 3px;
 }
 footer {
