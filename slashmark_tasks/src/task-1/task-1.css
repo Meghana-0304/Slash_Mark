@@ -88,9 +88,9 @@ section{
     margin-top: -3%;
     font-size: 40px;
 }
-.items .item-1 p:hover , .items .item-2 p:hover , .items .item-3 p:hover , .items .item-4  p:hover , .items .item-5 p:hover , .items .item-6 p:hover{
+/* .items .item-1 p:hover , .items .item-2 p:hover , .items .item-3 p:hover , .items .item-4  p:hover , .items .item-5 p:hover , .items .item-6 p:hover{
     color: burlywood;
-} 
+}  */
 .about {
     background-color:burlywood;
 }
@@ -162,6 +162,15 @@ footer .container {
 }
 /* for reponsive design */
 @media screen and (max-width:600px){
+    header{
+        width: 95%;
+    }
+    header .logo img{
+        width:40px;
+    }
+    header nav ul li a{
+        font-size: 60%;
+    }
     .home .container{
         display: flex;
         flex-direction:column;
