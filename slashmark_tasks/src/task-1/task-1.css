@@ -54,7 +54,7 @@ section{
     padding:3% ;
     border-radius: 100%;
 }
-.home .container h1{
+.home .container p{
     font-size:70px;
     font-weight: bold;
     font-style:italic;
@@ -159,4 +159,62 @@ footer {
 footer .container {
     width: 100%;
     margin: auto;
+}
+/* for reponsive design */
+@media screen and (max-width:600px){
+    .home .container{
+        display: flex;
+        flex-direction:column;
+    }
+    .home .container p{
+        font-size:30%;
+    }
+    #coffee{
+        width:90%;
+        height: 80%;
+        padding:4% ;
+        border-radius: 100%;
+    }
+    .menu .container{
+        font-size: 30px;
+    }
+    .items{
+        display: flex;
+        flex-direction: column;
+    }
+    .items .item-1 p , .items .item-2 p , .items .item-3 p , .items .item-4  p , .items .item-5 p , .items .item-6 p{
+        font-size: 30px;
+    }
+    .features{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:768px) and (max-width:885px){
+    .home .container{
+        display: flex;
+        flex-direction:column;
+    }
+    .home .container p{
+        font-size:40px;
+    }
+    #coffee{
+        width:90%;
+        height: 80%;
+        padding:3% ;
+        border-radius: 100%;
+    }
+    .menu .container{
+        font-size: 40px;
+    }
+    .items .item-1 p , .items .item-2 p , .items .item-3 p , .items .item-4  p , .items .item-5 p , .items .item-6 p{
+        font-size: 30px;
+    }
+    .items .item-1 img , .items .item-2 img , .items .item-3 img , .items .item-4  img , .items .item-5 img , .items .item-6 img{
+        width: 80%;
+    }
+    .features{
+        display: flex;
+        flex-direction: column;
+    }
 }
